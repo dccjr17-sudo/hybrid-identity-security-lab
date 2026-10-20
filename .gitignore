@@ -1,0 +1,8 @@
+evidence/raw/
+*.local.*
+*.env
+*.pfx
+*.key
+*.pem
+*.log
+reports/
