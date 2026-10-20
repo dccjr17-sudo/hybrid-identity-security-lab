@@ -1,0 +1,23 @@
+{
+  "purpose": "Sanitized documentation only; not an importable Entra configuration",
+  "domain": "identitylab.local",
+  "netbios": "IDENTITYLAB",
+  "tenantUpnSuffix": "YOUR-TENANT.onmicrosoft.com",
+  "domainController": { "name": "LAB-DC01", "ipv4": "192.168.50.10" },
+  "agentServer": { "name": "LAB-SYNC01", "ipv4": "192.168.50.20" },
+  "gateway": "192.168.50.1",
+  "prefixLength": 24,
+  "passwordHashSync": true,
+  "observedObjectProvisioningIntervalMinutes": 20,
+  "accidentalDeletionProtection": true,
+  "accidentalDeletionThreshold": 1,
+  "includedOUs": [
+    "OU=Employees,OU=Users,OU=IDENTITYLAB,DC=identitylab,DC=local",
+    "OU=Contractors,OU=Users,OU=IDENTITYLAB,DC=identitylab,DC=local",
+    "OU=Groups,OU=IDENTITYLAB,DC=identitylab,DC=local",
+    "OU=Disabled Users,OU=IDENTITYLAB,DC=identitylab,DC=local"
+  ],
+  "testApplication": "Hybrid-Lab-SAML-App",
+  "assignmentRequired": true,
+  "assignedGroup": "GG-Cloud-App-Users"
+}
